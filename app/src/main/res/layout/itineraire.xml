@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="81dp"
-    android:background="@drawable/second_background">
+    android:background="@drawable/second_background"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/accueil"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="316dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/index2"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,12 +25,12 @@
         android:id="@+id/spinner3"
         android:layout_width="170dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="368dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/spinner4"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/accueil"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -34,11 +38,11 @@
         android:id="@+id/spinner4"
         android:layout_width="170dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="368dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="126dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spinner3"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
@@ -47,10 +51,10 @@
         android:id="@+id/editText"
         android:layout_width="170dp"
         android:layout_height="19dp"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:text="Arrêt 1"
         android:textColor="@color/black"
@@ -62,11 +66,11 @@
     <TextView
         android:id="@+id/editText2"
         android:layout_width="170dp"
-        android:layout_height="19dp"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="78dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
         android:text="Arrêt 2"
         android:textColor="@color/black"
@@ -74,5 +78,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="366dp"
+        android:layout_height="234dp"
+        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="180dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner4"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
