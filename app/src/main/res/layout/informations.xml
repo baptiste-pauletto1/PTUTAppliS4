@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/second_background">
+
+    <Button
+        android:id="@+id/accueil"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/index2"
+        app:layout_constraintBottom_toTopOf="@+id/infos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tarifs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accueil" />
+
+    <Button
+        android:id="@+id/bug"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bug"
+        android:text="@string/bug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarifs" />
+
+    <TextView
+        android:id="@+id/tarifs"
+        android:layout_width="332dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infos" />
+
+</android.support.constraint.ConstraintLayout>
